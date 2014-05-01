@@ -16,11 +16,11 @@ public class AppStarter {
     public static void main( String[] args )
     {
         try {
-            logger.info("Initializing JAx RS App");
+            logger.info("Initializing Jax RS App");
             applicationContext = new ClassPathXmlApplicationContext(new String[]{"classpath:jax_rs_context_config.xml"});
             applicationContext.start();
             logger.info("===============================================================");
-            logger.info("==================== Jax RS App Started ========================");
+            logger.info("==================== Jax RS App Started =======================");
             logger.info("===============================================================");
         } catch (Exception e) {
             e.printStackTrace();

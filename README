@@ -1,1 +1,32 @@
+##########################################################################
+####################    JAX RS Sample Application    #####################
+##########################################################################
+
+
+Technologies Used
+=================
+
+1) Apache CXF (2.1 +)
+2) Spring Framework (3.0 +)
+3) Java Service Wrapper (For Server)
+4) Loggers - log4j-slf4j
+5) Build - Maven (2.x + compatible)
+
+
+Installing & Running
+====================
+
+Running Server
+--------------
+1) Build app from home directory
+Run - mvn clean install
+
+2) Run app
+Unzip - unzip /target/jax-rs-app.zip
+Go to - /jax-rs-app/bin
+Run   - ./startServer console
+
+
+Running Client
+--------------
 curl -i -XPOST 'http://127.0.0.1:9999/request/getValue/' -d '{"value":"50.00"}' -H "Content-Type: application/json"
